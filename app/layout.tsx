@@ -21,21 +21,28 @@ export const metadata: Metadata = {
     url: siteUrl,
     siteName: 'Veliqu',
     locale: 'en_GB',
-    type: 'website',
-    images: [
-      {
-        url: '/opengraph-image.png',
-        width: 1200,
-        height: 630,
-        alt: 'Veliqu Preview Banner',
-      },
-    ],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title,
-    description,
-    images: ['/opengraph-image.png'],
+        openGraph: {
+      title,
+      description,
+      url: siteUrl,
+      siteName: 'Veliqu',
+      locale: 'en_GB',
+      type: 'website',
+      images: [
+        {
+          url: `${siteUrl}/opengraph-image.png`, // Fixed: Combines your base URL with the image path
+          width: 1200,
+          height: 630,
+          alt: 'Veliqu Preview Banner',
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
+      images: [`${siteUrl}/opengraph-image.png`], // Fixed: Absolute URL for Twitter too
+    },
   },
 };
 
