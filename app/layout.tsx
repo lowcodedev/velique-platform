@@ -8,7 +8,6 @@ const inter = Inter({ subsets: ['latin'], variable: '--font-inter', display: 'sw
 const siteUrl = 'https://vercel.app';
 const title = 'Veliqu | Dating meets the creator economy';
 const description = 'Velique brings dating, social discovery and creator subscriptions together in one platform. Join the waitlist for early access.';
-const ogImage = 'https://pexels.com';
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -23,13 +22,11 @@ export const metadata: Metadata = {
     siteName: 'Veliqu',
     locale: 'en_GB',
     type: 'website',
-    images: [{ url: ogImage, alt: 'Veliqu, dating meets the creator economy' }],
   },
   twitter: {
     card: 'summary_large_image',
     title,
     description,
-    images: [ogImage],
   },
 };
 
