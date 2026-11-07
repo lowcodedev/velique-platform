@@ -22,11 +22,20 @@ export const metadata: Metadata = {
     siteName: 'Veliqu',
     locale: 'en_GB',
     type: 'website',
+    images: [
+      {
+        url: '/opengraph-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Veliqu Preview Banner',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title,
     description,
+    images: ['/opengraph-image.png'],
   },
 };
 
